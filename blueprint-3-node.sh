@@ -1,7 +1,7 @@
 ########################
 # create the BLUEPRINT
 ########################
-curl -H "X-Requested-By: ambari" -u admin:admin http://192.168.64.101:8080/api/v1/blueprints/multi-node-hdfs-yarn -d @- <<EOF
+curl -H "X-Requested-By: ambari" -u admin:admin http://c6401:8080/api/v1/blueprints/multi-node-hdfs-yarn -d @- <<EOF
 {
   "host_groups" : [
     {
@@ -74,7 +74,7 @@ EOF
 # create the cluster
 ########################
 
-curl -H "X-Requested-By: ambari" -u admin:admin http://192.168.64.101:8080/api/v1/clusters/MyThreeNodeCluster -d @- <<EOF
+curl -H "X-Requested-By: ambari" -u admin:admin http://c6401:8080/api/v1/clusters/MyThreeNodeCluster -d @- <<EOF
 {
   "blueprint" : "multi-node-hdfs-yarn",
   "host-groups" :[
