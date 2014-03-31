@@ -24,6 +24,12 @@ curl -H "X-Requested-By: ambari" -u admin:admin http://192.168.64.101:8080/api/v
       },
       {
         "name" : "ZOOKEEPER_SERVER"
+      },
+      {
+        "name" : "GANGLIA_SERVER"
+      },
+      {
+        "name" : "GANGLIA_MONITOR"
       }
       ],
       "cardinality" : "1"
@@ -48,6 +54,9 @@ curl -H "X-Requested-By: ambari" -u admin:admin http://192.168.64.101:8080/api/v
       },
       {
         "name" : "ZOOKEEPER_CLIENT"
+      },
+      {
+        "name" : "GANGLIA_MONITOR"
       }
       ],
       "cardinality" : "2"
