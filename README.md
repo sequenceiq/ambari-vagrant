@@ -1,10 +1,9 @@
 # Ambari on Vagrant
 
-This project helps to set up a 3 node ambari cluster on vagrant.
-It's started from the apache [Quick Start Guide](https://cwiki.apache.org/confluence/display/AMBARI/Quick+Start+Guide)
-, but got modified
+This project helps to set up a 3 node (up to 10) Ambari cluster on Vagrant.
+Started from the Apache Ambari [Quick Start Guide](https://cwiki.apache.org/confluence/display/AMBARI/Quick+Start+Guide) and modified.
 
-At the end there qill be 3 nodes:
+Using this will produce 3 nodes:
 
 - **c6401** : ambar-server + ambari-agent connecting to himself
 - **c6402** : ambari-agent connecting to c6401
@@ -12,11 +11,11 @@ At the end there qill be 3 nodes:
 
 ## Requirements
 
-You need [VitrtualBox](https://www.virtualbox.org/) and [vagrant](http://www.vagrantup.com/)
+You need [VirtualBox](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/)
 
 ## start 3 nodes
 
-Start up 3 nodes, they will provosion ambari agent connecting to the master **c6401**
+Starts up 3 nodes, provosioning nodes with ambari agents connecting to the master **c6401**
 ```
 git clonegit@github.com:sequenceiq/ambari-vagrant.git
 cd ambari-vagrant
@@ -25,7 +24,7 @@ vagrant up
 
 ## deploy cluster with ambari
 
-Since ambari 1.5 there is a new way to declaratively specify your cluseter, called
+Since Ambari 1.5 there is a new way to declaratively specify your cluseter, called
 [Blueprints](https://cwiki.apache.org/confluence/display/AMBARI/Blueprints)
 
 ```
